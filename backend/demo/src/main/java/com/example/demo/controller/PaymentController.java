@@ -17,7 +17,10 @@ import com.example.demo.repository.PaymentRepository;
 
 @RestController
 @RequestMapping("/payments")
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = {
+    "http://127.0.0.1:5500",
+    "https://gym-management-system-bh5o.onrender.com"
+})
 public class PaymentController {
 
     private final PaymentRepository paymentRepository;

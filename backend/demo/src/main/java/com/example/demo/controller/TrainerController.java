@@ -15,7 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.entity.Trainer;
 import com.example.demo.repository.TrainerRepository;
 
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = {
+    "http://127.0.0.1:5500",
+    "https://gym-management-system-bh5o.onrender.com"
+})
 @RestController
 @RequestMapping("/trainers")
 public class TrainerController {
